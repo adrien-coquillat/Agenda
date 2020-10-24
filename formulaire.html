@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulaire Agenda</title>
+  <link rel="stylesheet" href="agenda.css">
+</head>
+
+<body>
+  <header>
+    <h1>Mon agenda 2020</h1>
+    <span class="lien">Mois : <a href="agenda.html#slide1">Septembre</a> / <a href="agenda.html#slide2">Octobre</a> / <a
+        href="agenda.html#slide3">Novembre</a> / <a href="agenda.html#slide4">Decembre</a></span>
+
+  </header>
+  <main id="formulaire">
+
+    <div class="cadre">
+      <div class="principal">
+        <h2>Evenement:</h2>
+        <form method="post" action="agenda.html">
+          <div class="evenement">
+            <label for="hobbies" class="hobbies">TYPE:</label>
+            <input type="checkbox" class="place" name="rdv" value="1">
+            <label for="rdv">⏰ </label><br>
+            <input type="checkbox" class="place" name="anniversaire" value="2">
+            <label for="anniversaire">🎂</label><br>
+          </div>
+          <label for="identifiant">Nom de l'évenement :</label>
+          <input type="text" class="identifiant" name="identifiant"><br>
+          <label for="start">Jour :</label>
+          <input type="date" id="start" name="trip-start" value="2020-09-01" min="2020-09-01" max="2020-12-31">
+          <label class="Heure" for="Heure">Heure:</label>
+          <input class="Heure" type="text" class="Heure" name="Heure" placeholder="00h00"><br>
+          <input type="submit" value="Valider" color=black>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <a href="formulaire.html"> ➕ ⏰ 🎂 Evenement</a>
+  </footer>
+</body>
+
+</html>
